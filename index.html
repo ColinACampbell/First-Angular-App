@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="angular.js"> </script>
+    <script src="app.js"> </script>
+  </head>
+  <body>
+    <div id="appContainer" ng-app="mainApp" ng-controller="listCtrl">
+      <center>
+        <h1 class="diffFont"> First Angular App </h1>
+        <ol class="todoContainer">
+          <li ng-repeat="item in lists">
+            <h3> {{ item.name }} </h3>
+            <p> {{ item.content }} </p>
+            <button ng-click="remove($index)" style="float:left;width:100%;font-size:70%;height:25px"> Remove </button> </h3>
+          </li>
+        </ol>
+        <input style="width:200px;height:20px" type="text" ng-model="name"/>
+
+        <input style="width:280px;height:50px;text-align:center" type="text" ng-model="content"/> <br/> <br/>
+        <button style="box-shadow:0xp 0xp 5px grey; width:200px; height:30px;" ng-click="add()"> Submit </button>
+      </center>
+    <div>
+  </body>
+</html>

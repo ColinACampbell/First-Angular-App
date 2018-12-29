@@ -1,0 +1,62 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+#appContainer
+{
+  box-shadow: 0px 0px 5px grey;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 2%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.diffFont
+{
+  font-family: monospace;
+  color:grey;
+}
+
+.todoContainer
+{
+  position: relative;
+  width:250px;
+  height: 300px;
+  box-shadow: inset 0px 0px 2px grey;
+  border-radius: 1%;
+  display: block;
+  overflow: scroll;
+}
+
+.todoContainer > li
+{
+  list-style: none;
+  float:left;
+  width:264px;
+  max-height: 200px;
+  min-height: 100px;
+  margin-left: -35px;
+  margin-top: 5px;
+  background: none;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 0px 2px grey;
+}
+
+button
+{
+  color:white;
+  border: none;
+  background: black;
+}
+
+input
+{
+  margin-top: 2px;
+  border: 1px solid black;
+}
